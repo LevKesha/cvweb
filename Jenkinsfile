@@ -1,1 +1,9 @@
-git 'https://github.com/LevKesha/cvweb'
+pipeline {
+    stages {
+        stage('build'){
+            steps {
+            echo 'build'
+            }
+        }
+    }
+}
