@@ -1,5 +1,5 @@
 pipeline {
-agent any
+agent docker
     stages {
         stage('one'){
         steps {
@@ -7,7 +7,7 @@ agent any
         }
         stage('two'){
         steps {
-        sh 'sudo apt-get install docker'}
+        sh 'docker run -t apache .'}
         }
     }
     }
