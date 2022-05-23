@@ -7,7 +7,7 @@ agent any
         }
         stage('two'){
         steps {
-        sh 'apt-get install docker'}
+        sh 'sudo apt-get install docker'}
         }
     }
     }
