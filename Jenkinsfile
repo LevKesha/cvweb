@@ -3,11 +3,11 @@ agent any
     stages {
         stage('one'){
         steps {
-        sh 'docker build -t apache .'}
+        sh 'start docker'}
         }
         stage('two'){
         steps {
-        echo 'great'}
+        sh 'docker run -t apache .'}
         }
     }
     }
