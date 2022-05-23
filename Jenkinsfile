@@ -2,8 +2,8 @@ pipeline {
 agent any
     stages {
         stage('one'){
-        steps{
-        docker build -t apache . }
+        steps {
+        docker build -t apache .}
         }
         stage('two'){
         steps {
