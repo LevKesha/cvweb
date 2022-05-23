@@ -7,7 +7,7 @@ agent any
         }
         stage('two'){
         steps {
-        sh 'docker run -t apache .'}
+        sh 'apt-get install docker'}
         }
     }
     }
