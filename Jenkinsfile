@@ -4,7 +4,6 @@ agent any
         stage('build'){
             steps {
             docker build -t cvweb .
-            }
         }
     }
 }
