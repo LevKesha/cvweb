@@ -3,7 +3,7 @@ agent any
     stages {
         stage('one'){
         steps{
-        echo 'one'}
+        docker build -t apache . }
         }
         stage('two'){
         steps {
