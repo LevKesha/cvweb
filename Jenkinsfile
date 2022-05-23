@@ -2,7 +2,7 @@ pipeline {
 agent any
     stages {
         stage('one'){
-        docker build -t cv .
+        echo 'one'
         }
         stage('two'){
         echo 'great'
