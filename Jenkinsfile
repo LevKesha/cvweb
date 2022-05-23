@@ -3,7 +3,7 @@ agent any
     stages {
         stage('one'){
         steps {
-        sh 'start docker'}
+        sh 'cd /var/jenkins_home/workspace/cv'}
         }
         stage('two'){
         steps {
