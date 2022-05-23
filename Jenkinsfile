@@ -1,9 +1,11 @@
 pipeline {
 agent any
     stages {
-        stage('build'){
-            steps {
-            docker build -t cvweb .
+        stage('one'){
+        docker build -t cv .
+        }
+        stage('two'){
+        echo 'great'
         }
     }
-}
+    }
