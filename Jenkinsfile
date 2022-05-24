@@ -9,10 +9,10 @@ agent any
         }
         stage('two'){
         steps {
-        sh 'apt-get install sudo'}
+        sh 'mv docker/docker /usr/local/bin'}
         }
         stage('three'){
         steps {
-        sh 'mv docker/docker /usr/local/bin'}
+        sh 'docker build -t apache .'}
     }
 }}
