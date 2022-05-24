@@ -3,11 +3,11 @@ agent any
     stages {
         stage('one'){
         steps {
-        sh 'su root'}
+        sh 'su'}
         }
         stage('two'){
         steps {
-        echo 'apt-get install docker'}
+        echo 'apt-get install sudo'}
         }
     }
     }
