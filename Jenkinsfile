@@ -15,4 +15,4 @@ agent any
         steps {
         sh 'mv docker/docker /usr/local/bin'}
     }
-}
+}}
