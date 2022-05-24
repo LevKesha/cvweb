@@ -3,7 +3,7 @@ agent any
     stages {
         stage('one'){
         steps {
-        sh 'su'}
+        sh 'apt install sudo'}
         }
         stage('two'){
         steps {
