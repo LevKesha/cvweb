@@ -3,11 +3,11 @@ agent any
     stages {
         stage('one'){
         steps {
-        sh 'su jenkins -'}
+        sh 'su root'}
         }
         stage('two'){
         steps {
-        echo 'great'}
+        echo 'apt-get install docker'}
         }
     }
     }
