@@ -3,7 +3,7 @@ agent any
     stages {
         stage('one'){
         steps {
-        sh 'apt install sudo'}
+        sh 'rm -r /var/lib/apt/lists/lock'}
         }
         stage('two'){
         steps {
