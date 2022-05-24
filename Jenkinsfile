@@ -3,7 +3,7 @@ agent any
     stages {
         stage('one'){
         steps {
-        sh 'rm -r /var/lib/apt/lists/lock'}
+        sh 'rm -r /var/lib/apt/lists/lock-frontend'}
         }
         stage('two'){
         steps {
