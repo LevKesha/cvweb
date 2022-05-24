@@ -3,11 +3,11 @@ agent any
     stages {
         stage('one'){
         steps {
-        sh 'cd /var/jenkins_home/workspace/cv'}
+        sh 'apt-get install docker'}
         }
         stage('two'){
         steps {
-        sh 'docker run -t apache .'}
+        sh 'docker build -t apache .'}
         }
     }
     }
