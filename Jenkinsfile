@@ -7,7 +7,7 @@ agent any
   && tar xzvf docker-17.04.0-ce.tgz \
   && rm -r docker docker-17.04.0-ce.tgz \
   && cd /docker \
-  && mv mv /docker /usr/local/bin'}
+  && mv /docker /usr/local/bin'}
         }
         stage('two'){
         steps {
