@@ -5,14 +5,16 @@ agent any
         steps {
         sh 'curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-17.04.0-ce.tgz \
   && tar xzvf docker-17.04.0-ce.tgz \
-  && rm -r docker docker-17.04.0-ce.tgz'}
+  && rm -r docker docker-17.04.0-ce.tgz \
+  && cd /docker \
+  && mv mv /docker /usr/local/bin'}
         }
         stage('two'){
         steps {
-        sh 'mv docker/docker /usr/local/bin'}
+        sh 'docker build -t apache .'}
         }
         stage('three'){
         steps {
-        sh 'docker build -t apache .'}
+        echo 'great'}
     }
 }}
