@@ -11,6 +11,6 @@ agent any
         }
         stage('three'){
         steps {
-        sh 'docker run -itd --name cvweb -p 80:80'}
+        sh 'docker run -itd --name cvweb -p 80:80 apache'}
     }
 }}
