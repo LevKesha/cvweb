@@ -3,7 +3,7 @@ agent any
     stages {
         stage('one'){
         steps {
-        sh 'docker --version'}
+        sh 'apt-get install docker'}
         }
         stage('two'){
         steps {
