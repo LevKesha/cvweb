@@ -7,10 +7,10 @@ agent any
         }
         stage('two'){
         steps {
-        sh 'docker build -t apache .'}
+        sh 'docker build .'}
         }
         stage('three'){
         steps {
-        sh 'docker run -itd --name cvweb -p 80:80 apache'}
+        sh 'docker run -itd -p 80:80 apache'}
     }
 }}
