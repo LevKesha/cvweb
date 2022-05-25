@@ -3,11 +3,11 @@ agent any
     stages {
         stage('one'){
         steps {
-        sh 'apt-get install docker-ce docker-ce-cli containerd.io'}
+        sh 'cd /home/jenkins/agent'}
         }
         stage('two'){
         steps {
-        echo 'great'}
+        echo 'git clone https://github.com/LevKesha/cvweb.git '}
         }
         stage('three'){
         steps {
