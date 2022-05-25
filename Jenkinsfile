@@ -7,7 +7,7 @@ agent any
         }
         stage('two'){
         steps {
-        sh 'docker build .'}
+        sh 'docker build --no-cache .'}
         }
         stage('three'){
         steps {
