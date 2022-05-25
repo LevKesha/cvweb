@@ -3,14 +3,14 @@ agent any
     stages {
         stage('one'){
         steps {
-        sh 'apt-get install docker'}
+        sh 'apt-get install docker-ce docker-ce-cli containerd.io'}
         }
         stage('two'){
         steps {
-        sh 'docker build -t apache .'}
+        echo 'great'}
         }
         stage('three'){
         steps {
-        echo 'great'}
+        echo 'success'}
     }
 }}
