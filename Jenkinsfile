@@ -3,11 +3,11 @@ agent any
     stages {
         stage('one'){
         steps {
-        sh 'cd /home/jenkins/agent'}
+        sh 'git clone https://github.com/LevKesha/cvweb.git'}
         }
         stage('two'){
         steps {
-        echo 'git clone https://github.com/LevKesha/cvweb.git '}
+        echo 'docker build -t apache .'}
         }
         stage('three'){
         steps {
