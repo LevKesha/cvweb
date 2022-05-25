@@ -11,6 +11,6 @@ agent any
         }
         stage('three'){
         steps {
-        sh 'docker run -itd -p 80:80 apache'}
+        sh 'docker run -itd apache'}
     }
 }}
