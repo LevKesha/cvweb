@@ -1,9 +1,13 @@
 pipeline {
-    agent {
-        docker { image 'docker:16.13.1-alpine' }
-    }
+    agent any
     stages {
-        stage('one'){
+        stage('Build') {
+            agent {
+                docker {
+                    image 'gradle:6.7-jdk11'
+                    reuseNode true
+                }
+            }
         steps {
         sh 'git pull --rebase https://github.com/LevKesha/cvweb.git'}
         }
