@@ -1,5 +1,7 @@
 pipeline {
-agent any
+    agent {
+        docker { image 'node:16.13.1-alpine' }
+    }
     stages {
         stage('one'){
         steps {
@@ -7,7 +9,7 @@ agent any
         }
         stage('two'){
         steps {
-        sh 'docker build --no-cache .'}
+        sh 'docker build .'}
         }
         stage('three'){
         steps {
