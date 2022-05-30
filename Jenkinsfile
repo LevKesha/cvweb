@@ -3,11 +3,11 @@ pipeline {
     stages {
         stage("one"){
         steps {
-        sh 'sudo su - && git pull --rebase https://github.com/LevKesha/cvweb.git'}
+        sh 'git pull --rebase https://github.com/LevKesha/cvweb.git'}
         }
         stage('two'){
         steps {
-        sh 'docker build .'}
+        sh 'sudo docker build .'}
         }
         stage('three'){
         steps {
