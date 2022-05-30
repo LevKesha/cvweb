@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent "docker"
     stages {
         stage("one"){
         steps {
@@ -7,7 +7,7 @@ pipeline {
         }
         stage('two'){
         steps {
-        sh 'sudo docker build .'}
+        sh 'docker build .'}
         }
         stage('three'){
         steps {
