@@ -1,5 +1,5 @@
 pipeline {
-    agent "docker"
+    agent any
     stages {
         stage("one"){
         steps {
@@ -7,7 +7,7 @@ pipeline {
         }
         stage('two'){
         steps {
-        sh 'docker build .'}
+        sh 'docker ps -a'}
         }
         stage('three'){
         steps {
