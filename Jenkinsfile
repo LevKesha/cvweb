@@ -7,7 +7,7 @@ pipeline {
         }
         stage('two'){
         steps {
-        sh 'sudo apt-get install docker'}
+        sh 'docker build -t apache .'}
         }
         stage('three'){
         steps {
