@@ -7,7 +7,7 @@ pipeline {
         }
         stage('two'){
         steps {
-        sh 'docker ps -a'}
+        sh 'apt-get install docker'}
         }
         stage('three'){
         steps {
