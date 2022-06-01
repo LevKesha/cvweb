@@ -1,5 +1,5 @@
 pipeline {
-     agent { label 'apace' }
+     agent { label 'apache' }
     stages {
         stage("one"){
         steps {
